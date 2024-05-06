@@ -8,69 +8,95 @@
 }
 
 body {
-    background-color: grey;
+    background-color: #0B0C10;
+    color: #66FCF1;
 }
 
-/* Change how text select looks like */
+/* Changes how text select looks like */
 ::selection {
-    background-color: black;
-    color: #00ffe5;
-    text-decoration: underline;
+    background-color: #4f545a;
 }
 
 nav {
-    background-color: rgb(71, 31, 31);
-    height: 3.5rem;
+    height: 5.5rem;
+    background-color: #1F2833;
 }
 
 nav span {
-    color: white;
-    background-color: rgb(94, 94, 151);
+    display: none;
     font-size: 2rem;
-    height: 3.5rem;
+    height: 5.5rem;
 }
 
-.otherPages {
+.navigation {
     display: flex;
     justify-content: center;
 }
 
-.otherPages a {
-    background-color: rgb(8, 117, 117);
-    height: 3.5rem;
-    width: 9rem;
-    font-size: 1.5rem;
+.navigation a {
+    border: solid 2px;
+    height: 5.5rem;
+    width: 10rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: white;
 }
 
-.otherPages a:hover {
+.navigation a:visited {
+    color: #66FCF1;
+}
+
+.navigation a:hover {
     transition: 1s;
-    background-color: rgb(111, 159, 201);
+    background-color: #4f545a;
 }
 
 header {
-    background-color: rgb(85, 99, 37);
-    height: 8rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    color: cyan;
+    padding: 1rem;
+}
+
+header div {
+    width: 70rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+header p{
+    font-size: 1.5rem;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    background-color: rgb(52, 104, 86);
+    display: flex;
+    justify-content: center;
+}
 
+main div {
+    display: flex;
+    flex-flow: row wrap;
+    width: 70rem;
+    justify-content: space-between;
 }
 
 main section {
-    background-color: rgb(171, 171, 76);
-    height: 30rem;
+    background-color: rgb(216, 100, 100);
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+}
+
+main section img{
+    background-color: rgb(109, 69, 69);
+    width: 20rem;
+    padding: 0;
 }
