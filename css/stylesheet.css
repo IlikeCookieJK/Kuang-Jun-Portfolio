@@ -20,6 +20,9 @@ body {
 nav {
     height: 5.5rem;
     background-color: #1F2833;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav span {
@@ -30,12 +33,11 @@ nav span {
 
 .navigation {
     display: flex;
-    justify-content: center;
 }
 
 .navigation a {
-    border: solid 2px;
-    height: 5.5rem;
+    color: #66FCF1;
+    height: 3.5rem;
     width: 10rem;
     font-size: 2rem;
     display: flex;
@@ -44,59 +46,27 @@ nav span {
     text-decoration: none;
 }
 
-.navigation a:visited {
-    color: #66FCF1;
-}
-
 .navigation a:hover {
+    outline: solid 3px #1F2833;
+    background-color: #66FCF1;
+    color: #1F2833;
     transition: 1s;
-    background-color: #4f545a;
 }
 
-header {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+/* Changes the spacing between lines */
+p {
+    line-height: 1.5;
 }
 
-header div {
-    width: 70rem;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+footer {
+    margin-top: 1.5rem;
+    height: 8rem;
+    background-color: #1F2833;
 }
 
-h1 {
-    font-size: 5rem;
-}
-
-header p{
-    font-size: 1.5rem;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-}
-
-main div {
-    display: flex;
-    flex-flow: row wrap;
-    width: 70rem;
-    justify-content: space-between;
-}
-
-main section {
-    background-color: rgb(216, 100, 100);
-    width: 20rem;
-    height: 20rem;
-    padding: 1rem;
-}
-
-main section img{
-    background-color: rgb(109, 69, 69);
-    width: 20rem;
-    padding: 0;
+footer a {
+    text-decoration: none;
+    background-color: #66FCF1;
+    color: #1F2833;
+    font-size: 2rem;
 }
