@@ -4,7 +4,6 @@ header {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    font-size: 3rem;
 }
 
 header div {
@@ -12,6 +11,14 @@ header div {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+header p {
+    font-size: 1.5rem;
 }
 
 main {
@@ -39,11 +46,18 @@ main div {
 }
 
 .homeSection img {
+    object-fit: cover;
+    /* Use this to center image if not center */
+    /* object-position: ; */
     width: 20rem;
 }
 
 .homeSection h2 {
     font-size: 1.6rem;
+}
+
+.homeSection p {
+    font-size: 1.2rem;
 }
 
 .homeSection a {
