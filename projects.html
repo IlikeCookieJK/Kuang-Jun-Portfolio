@@ -25,9 +25,8 @@
         <div>
             <h1>Projects</h1>
             <p>These are projects that I have worked on. All of these projects were made in Visual Studio Code. They are
-                all
-                organized from latest to oldest. In the carousel, it contains the favorite projects that I have worked
-                on.
+                all organized from latest to oldest. In the carousel, it contains the favorite projects that I have
+                worked on.
             </p>
         </div>
     </header>
@@ -36,64 +35,100 @@
             <section class="carouselProject1" id="carouselItem1">
                 <img src="images/battleship.png" alt="Image of Battleship Unknown">
                 <div>
-                    <h3>Battleship Unknown</h3>
-                    <p>This was a game that I created with my partner, Taha. We knew that we needed to make a game that
-                        was
-                        compatible on desktop and mobile. In addition, the game needed the ability to allow people to
-                        play
-                        with a friend or computer opponent. Hence why we chose to make a Battleship game with some
-                        twists.
-                        The twists were ships being able to move each round, both players don't know where their ships'
-                        locations are and each ship having their own unique ability. The game mechanic is simple which
-                        made
-                        it easier for us to make a computer opponent. After we decided what game we wanted to make, we
-                        started by creating a layout of our game in Figma. We then moved on to Lucidchart where we made
-                        a
-                        turn flowchart and a program flowchart. A flow chart allows us to visualize what happens when a
-                        condition is met. Depending on what condition is met, there will be a different output. When we
-                        finished with the flowcharts, we started programming the game logic with JavaScript. The reason
-                        we
-                        wanted to work on JavaScript first is because we wanted to make the game work before we worked
-                        on
-                        the look of the game. There was a multiple roadblock we encountered working on the game logic.
-                        One
-                        of the major road block we encounter was preventing the ship coordinates from overlapping. Our
-                        solution was to create a loop that checked for the ship's coordinates with each other for any
-                        that
-                        had the same. If it returned true, the ship would not move this round. The second to last step
-                        was
-                        to write the HTML and CSS. The final step was having people playing our game to give us feedback
-                        and
-                        find bugs. With feedbacks and bugs we made some quick fixes. Overall, this project has taught me
-                        the
-                        difficulty of time management.</p>
+                    <h2>Battleship Unknown</h2>
+                    <p>Battleship Unknown was a game that I created with my partner, Taha. We made a digitalize version
+                        of Battleship where the ships are able to move and each ships with unique ability. We started
+                        working on JavaScript first. Since we spent a majority of our time on JavaScript, we did not
+                        spend enough time on the CSS. Overall the game function works, but the look would need more
+                        improvement.</p>
                 </div>
             </section>
             <section class="carouselProject2" id="carouselItem2">
                 <img src="images/calculator.png" alt="Image of Budget Calculator">
                 <div>
-                    <h3>Budget Calculator</h3>
+                    <h2>Budget Calculator</h2>
                     <p>The Budget Calculator was created to help people calculated their monthly expenses. It helps with
-                        calculating the deductions and monthly expenses from your net monthly income. It would then let
-                        the
-                        user know if they are in the positive or not. The purpose of this project is to learn how to
+                        calculating the deductions and monthly expenses from your net monthly income. The purpose of
+                        this project is to learn how to
                         communicate and lead. We started with creating a prototype of our calculator in Figma. Then we
-                        were
-                        partner with someone every 25 minutes. Depending on the role assigned, I would be leading
-                        someone on
-                        how to make my calculator or I would be working for someone else. Either way, communication and
-                        teamwork was important, because we were not allowed to write any of the code for our own
-                        calculator.
-                        Due to the restriction and a deadline, we wanted our partner to work as efficiently as possible.
-                        After I finished my calculator, I realized that I struggled with articulating instruction.</p>
+                        took turn leading someone or following someone instruction. This project provided practice with
+                        communication and practicing teamwork.</p>
                 </div>
             </section>
             <section class="carouselProject3" id="carouselItem3">
                 <img src="images/fastFood.png" alt="Image of Western Dino House">
                 <div>
-                    <h3>Western Dino House</h3>
-                    <p>Western Dino House was built to look like an actual fast food restaurant website. It was made
-                        with my
+                    <h2>Western Dino House</h2>
+                    <p>Western Dino House was built to look like an actual fast food restaurant website. I made
+                        it with my partner, Matthew. For this project, we started with creating a prototype. Then we
+                        moved on to writing the HTML. Next we moved on to styling with CSS. While styling, we encounter
+                        multiple challenges trying to positioning our contents.</p>
+                </div>
+            </section>
+        </section>
+        <section class="otherProjects">
+            <section class="projects">
+                <img src="images/battleship.png" alt="Image of Battleship Unknown">
+                <div>
+                    <h2>Battleship Unknown</h2>
+                    <p class="truncate">This was a game that I created with my partner, Taha. We knew that we needed to
+                        make a game that was compatible on desktop and mobile. In addition, the game needed the ability
+                        to allow people to play with a friend or computer opponent. Hence why we chose to make a
+                        Battleship game with some twists. The twists were ships being able to move each round, both
+                        players don't know where their ships' locations are and each ship having their own unique
+                        ability. The game mechanic is simple which made it easier for us to make a computer opponent.
+                        After we decided what game we wanted to make, we started by creating a layout of our game in
+                        Figma. We then moved on to Lucidchart where we made a turn flowchart and a program flowchart. A
+                        flow chart allows us to visualize what happens when a
+                        condition is met. Depending on what condition is met, there will be a different output. When we
+                        finished with the flowcharts, we started programming the game logic with JavaScript. The reason
+                        we wanted to work on JavaScript first is because we wanted to make the game work before we
+                        worked
+                        on the look of the game. There was a multiple roadblock we encountered working on the game
+                        logic.
+                        One of the major road block we encounter was preventing the ship coordinates from overlapping.
+                        Our
+                        solution was to create a loop that checked for the ship's coordinates with each other for any
+                        that had the same. If it returned true, the ship would not move this round. The second to last
+                        step
+                        was to write the HTML and CSS. The final step was having people playing our game to give us
+                        feedback
+                        and find bugs. With feedbacks and bugs we made some quick fixes. Overall, this project has
+                        taught me
+                        the difficulty of time management.</p>
+                    <button>Read More</button>
+                    <button class="hidden">Read Less</button>
+                    <a href="">Visit Web</a>
+
+                    <!-- use button to show more and less -->
+                    <!-- JS will be needed to get rid of truncate -->
+                </div>
+            </section>
+            <section class="projects">
+                <img src="images/calculator.png" alt="Image of Budget Calculator">
+                <div>
+                    <h2>Budget Calculator</h2>
+                    <p class="truncate">The Budget Calculator was created to help people calculated their monthly
+                        expenses. It helps with calculating the deductions and monthly expenses from your net monthly
+                        income. It would then let the user know if they are in the positive or not. The purpose of this
+                        project is to learn how to communicate and lead. We started with creating a prototype of our
+                        calculator in Figma. Then we were partner with someone every 25 minutes. Depending on the role
+                        assigned, I would be leading someone on how to make my calculator or I would be working for
+                        someone else. Either way, communication and teamwork was important, because we were not allowed
+                        to write any of the code for our own calculator. Due to the restriction and a deadline, we
+                        wanted our partner to work as efficiently as possible. After I finished my calculator, I
+                        realized that I struggled with articulating instruction.</p>
+                    <button>Read More</button>
+                    <button class="hidden">Read Less</button>
+                    <a href="">Visit Web</a>
+                </div>
+            </section>
+            <section class="projects">
+                <img src="images/fastFood.png" alt="Image of Western Dino House">
+                <div>
+                    <h2>Western Dino House</h2>
+                    <p class="truncate">Western Dino House was built to look like an actual fast food restaurant
+                        website. It was made with my
                         partner, Matthew. We spent a week making a layout of our website. Our next step was writing the
                         HTML
                         for each pages. The last step for our project was working on the CSS, but we struggled with
@@ -102,71 +137,34 @@
                         into
                         our website. The file was given to us by our instructor and the purpose was to make the shopping
                         portion of our website functional.</p>
+                    <button>Read More</button>
+                    <button class="hidden">Read Less</button>
+                    <a href="">Visit Web</a>
                 </div>
             </section>
-        </section>
-        <section class="otherProjects">
             <section class="projects">
-                <img src="" alt="">
-                <h3>Battleship Unknown</h3>
-                <p>This was a game that I created with my partner, Taha. We knew that we needed to make a game that was
-                    compatible on desktop and mobile. In addition, the game needed the ability to allow people to play
-                    with a friend or computer opponent. Hence why we chose to make a Battleship game with some twists.
-                    The twists were ships being able to move each round, both players don't know where their ships'
-                    locations are and each ship having their own unique ability. The game mechanic is simple which made
-                    it easier for us to make a computer opponent. After we decided what game we wanted to make, we
-                    started by creating a layout of our game in Figma. We then moved on to Lucidchart where we made a
-                    turn flowchart and a program flowchart. A flow chart allows us to visualize what happens when a
-                    condition is met. Depending on what condition is met, there will be a different output. When we
-                    finished with the flowcharts, we started programming the game logic with JavaScript. The reason we
-                    wanted to work on JavaScript first is because we wanted to make the game work before we worked on
-                    the look of the game. There was a multiple roadblock we encountered working on the game logic. One
-                    of the major road block we encounter was preventing the ship coordinates from overlapping. Our
-                    solution was to create a loop that checked for the ship's coordinates with each other for any that
-                    had the same. If it returned true, the ship would not move this round. The second to last step was
-                    to write the HTML and CSS. The final step was having people playing our game to give us feedback and
-                    find bugs. With feedbacks and bugs we made some quick fixes. Overall, this project has taught me the
-                    difficulty of time management.</p>
+                <img src="images/zenGarden.png" alt="Image of CSS Zen Garden">
+                <div>
+                    <h2>CSS Zen Garden</h2>
+                    <p class="truncate">In CSS Zen Garden project, I was given a HTML file and an empty CSS file. For
+                        this assigment, I had
+                        to stylized the webpage with CSS without touching the HTML file. In addition, I had a list of
+                        selectors I had to use. The purpose of this project was to learn about new CSS selectors and how
+                        they function. </p>
+                    <a href="">Visit Web</a>
+                </div>
             </section>
             <section class="projects">
-                <img src="" alt="">
-                <h3>Budget Calculator</h3>
-                <p>The Budget Calculator was created to help people calculated their monthly expenses. It helps with
-                    calculating the deductions and monthly expenses from your net monthly income. It would then let the
-                    user know if they are in the positive or not. The purpose of this project is to learn how to
-                    communicate and lead. We started with creating a prototype of our calculator in Figma. Then we were
-                    partner with someone every 25 minutes. Depending on the role assigned, I would be leading someone on
-                    how to make my calculator or I would be working for someone else. Either way, communication and
-                    teamwork was important, because we were not allowed to write any of the code for our own calculator.
-                    Due to the restriction and a deadline, we wanted our partner to work as efficiently as possible.
-                    After I finished my calculator, I realized that I struggled with articulating instruction.</p>
-            </section>
-            <section class="projects">
-                <img src="" alt="">
-                <h3>Western Dino House</h3>
-                <p>Western Dino House was built to look like an actual fast food restaurant website. It was made with my
-                    partner, Matthew. We spent a week making a layout of our website. Our next step was writing the HTML
-                    for each pages. The last step for our project was working on the CSS, but we struggled with
-                    positioning the contents in our website. Due to the fact that we lacked the skills, we spent a
-                    majority of our time on CSS. Additionaly, we had some JavaScript file that we had to integrate into
-                    our website. The file was given to us by our instructor and the purpose was to make the shopping
-                    portion of our website functional.</p>
-            </section>
-            <section class="projects">
-                <img src="" alt="">
-                <h3>CSS Zen Garden</h3>
-                <p>In CSS Zen Garden project, I was given a HTML file and an empty CSS file. For this assigment, I had
-                    to stylized the webpage with CSS without touching the HTML file. In addition, I had a list of
-                    selectors I had to use. The purpose of this project was to learn about new CSS selectors and how
-                    they function. </p>
-            </section>
-            <section class="projects">
-                <img src="" alt="">
-                <h3>Dino Dossier</h3>
-                <p>The Dino Dossier was the first website I built. It was a project that we made early on in the year
-                    which reflected our HTML and CSS skills. When I was working on this project, I struggled with
-                    positioning the content on my page. There was also problem with the color that I chose for the
-                    background.</p>
+                <img src="images/dossier.png" alt="Image of Dino Dossier">
+                <div>
+                    <h2>Dino Dossier</h2>
+                    <p class="truncate">The Dino Dossier was the first website I built. It was a project that we made
+                        early on in the year
+                        which reflected our HTML and CSS skills. When I was working on this project, I struggled with
+                        positioning the content on my page. There was also problem with the color that I chose for the
+                        background.</p>
+                    <a href="">Visit Web</a>
+                </div>
             </section>
         </section>
     </main>
