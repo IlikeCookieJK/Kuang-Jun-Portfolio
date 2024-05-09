@@ -8,7 +8,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 header div {
@@ -74,7 +74,7 @@ h2 {
 
 .truncate {
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }

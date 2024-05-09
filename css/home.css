@@ -4,7 +4,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 header div {
@@ -29,6 +29,7 @@ main div {
 .homeSection {
     background-color: #1F2833;
     width: 20.3rem;
+    height: fit-content;
     padding: 1rem;
     display: flex;
     flex-flow: column;

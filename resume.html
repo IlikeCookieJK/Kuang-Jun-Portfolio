@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <script src="JavaScript/resume.js"></script>
 </head>
 
 <body>
-    <nav>
+    <nav class="none">
         <span>lines</span>
         <section class="navigation">
             <a href="index.html">Home</a>
@@ -19,87 +21,92 @@
             <a href="resume.html">Resume</a>
         </section>
     </nav>
-    <main>
-        <section>
+    <header class="none">
+        <div>
             <h1>My Resume</h1>
             <p>This is my resume and you can click the download button to download a pdf of my resume.</p>
-            <button class="download">Download</button>
-        </section>
-        <section class="resume">
-            <section>
+            <a href="#" id="print" class="download">Download</a>
+        </div>
+    </header>
+    <main>
+        <section class="resume" id="resume">
+            <section class="introduction">
                 <h2>Jun Kuang</h2>
                 <p>I go to Buchanan High School and I have gotten A's and B's throughout High School. I am learning how
                     to code at the Center for Advanced Research and Technology.</p>
             </section>
-            <section>
-                <h3>Contact</h3>
-                <p>(559)-940-4516</p>
-                <p>jun.hong.kuang000@gmail.com</p>
-                <a href="">IlikeCookieJK</a>
-            </section>
-            <section>
-                <h3>Languages</h3>
-                <ul>
-                    <li>HTML/CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Skills</h3>
-                <ul>
-                    <li>Problem-Solving</li>
-                    <li>Organize</li>
-                    <li>Flexible</li>
-                    <li>Adaptable</li>
-                    <li>Determined</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Experiences</h3>
-                <section class="experience1">
-                    <h4>Web Development Showcase</h4>
-                    <h4>Clovis - California</h4>
-                    <h4>2024</h4>
-                    <p>At the Center for Advanced Research and Technology (CART), my partner and I created a short
-                        presentation for the public to see what we have done so far in the first semester at CART.</p>
+            <div class="leftSide">
+                <section>
+                    <h3>Contact</h3>
+                    <p>jun.hong.kuang000@gmail.com</p>
+                    <a href="">IlikeCookieJK</a>
                 </section>
-                <section class="experience2">
-                    <h4>Western Dino Howse Website</h4>
-                    <h4>Clovis - California</h4>
-                    <h4>2023</h4>
-                    <p>Western Dino House was a fast food restaurant website that I worked on with a partner. We came up
-                        with the layout and used HTML and CSS to create the website. Some part of the website also
-                        contained JavaScript.</p>
+                <section>
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
                 </section>
-                <section class="experience3">
-                    <h4>Volunteering Work</h4>
-                    <h4>Clovis - California</h4>
-                    <h4>2023</h4>
-                    <p>During summer, I participated at CART Summer Academy in the engineering lab. We helped out with
-                        teaching the kids how to assemble a simple plane and rocket.</p>
+                <section>
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Problem-Solving</li>
+                        <li>Organize</li>
+                        <li>Flexible</li>
+                        <li>Adaptable</li>
+                        <li>Determined</li>
+                    </ul>
                 </section>
-            </section>
-            <section>
-                <h3>Educations</h3>
-                <section class="education2">
-                    <h4>Center for Advanced Research and Technology</h4>
-                    <p>Web Application Development</p>
-                    <p>2023 - In Progress</p>
+            </div>
+            <div class="rightSide">
+                <section>
+                    <h3>Experiences</h3>
+                    <section class="experience1">
+                        <h4>Web Development Showcase</h4>
+                        <h4>Clovis - California</h4>
+                        <h4>2024</h4>
+                        <p>At the Center for Advanced Research and Technology (CART), my partner and I created a short
+                            presentation for the public to see what we have done so far in the first semester at CART.</p>
+                    </section>
+                    <section class="experience2">
+                        <h4>Western Dino Howse Website</h4>
+                        <h4>Clovis - California</h4>
+                        <h4>2023</h4>
+                        <p>Western Dino House was a fast food restaurant website that I worked on with a partner. We came up
+                            with the layout and used HTML and CSS to create the website. Some part of the website also
+                            contained JavaScript.</p>
+                    </section>
+                    <section class="experience3">
+                        <h4>Volunteering Work</h4>
+                        <h4>Clovis - California</h4>
+                        <h4>2023</h4>
+                        <p>During summer, I participated at CART Summer Academy in the engineering lab. We helped out with
+                            teaching the kids how to assemble a simple plane and rocket.</p>
+                    </section>
                 </section>
-                <section class="education3">
-                    <h4>Center for Advanced Research and Technology</h4>
-                    <p>Engineering, Manufacturing and Robotics</p>
-                    <p>2023 - 2024</p>
+                <section>
+                    <h3>Educations</h3>
+                    <section class="education2">
+                        <h4>Center for Advanced Research and Technology</h4>
+                        <p>Web Application Development</p>
+                        <p>2023 - In Progress</p>
+                    </section>
+                    <section class="education3">
+                        <h4>Center for Advanced Research and Technology</h4>
+                        <p>Engineering, Manufacturing and Robotics</p>
+                        <p>2023 - 2024</p>
+                    </section>
+                    <section class="education1">
+                        <h4>Buchanan High School</h4>
+                        <p>High School Diploma</p>
+                        <p>2020 - In Progress</p>
+                    </section>
                 </section>
-                <section class="education1">
-                    <h4>Buchanan High School</h4>
-                    <p>High School Diploma</p>
-                    <p>2020 - In Progress</p>
-                </section>
-            </section>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="none">
         <h6>Contacts</h6>
         <a href="contact.html" class="contact">Contact Me Page</a>
         <div>
