@@ -48,7 +48,7 @@ main .resume {
 
 main .resume {
     text-decoration: none;
-    background-color: rgb(75, 62, 62);
+    background-color: rgb(255, 255, 255);
     color: black;
 }
 
@@ -88,16 +88,30 @@ h3 {
 }
 
 .leftSide {
-    flex-basis: 15%;
+    flex-basis: 22%;
+    padding: 1.5rem;
 }
 
-.leftSide * {
+.leftSide li,
+a {
+    list-style-type: none;
     text-decoration: none;
     color: black;
+    font-size: 1.2rem;
+    margin: 1rem 0;
 }
 
 .rightSide {
-    flex-basis: 72%;
+    flex-basis: 69%;
+    padding: 1.5rem;
+}
+
+.resume h4{
+    font-size: 1.5rem;
+}
+
+.experience p {
+    margin: 0.5rem 0;
 }
 
 @media print {

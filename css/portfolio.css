@@ -5,3 +5,74 @@ header {
     font-size: 2.5rem;
     margin-top: 1rem;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.pageWrapper {
+    width: 70rem;
+}
+
+.skills {
+    background-color: #1F2833;
+    border-radius: 20px;
+    width: 20rem;
+    padding: 1rem;
+}
+
+.skills h3 {
+    font-size: 3rem;
+}
+
+.skills li {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    list-style-type: none;
+    color: white;
+}
+
+.work {
+    background-color: #1F2833;
+    border-radius: 20px;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.work img {
+    width: 15rem;
+    height: 15rem;
+    flex-basis: 24%;
+    object-fit: cover;
+}
+
+.work div {
+    flex-basis: 73%;
+    padding: 0 1rem;
+}
+
+.work div h2 {
+    font-size: 2rem;
+}
+
+.work div p {
+    height: 10rem;
+}
+
+.work div a {
+    text-decoration: none;
+    border: 2px solid #66FCF1;
+    border-radius: 10px;
+    color: #66FCF1;
+    font-size: 1.6rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}

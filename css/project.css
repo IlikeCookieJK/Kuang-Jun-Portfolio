@@ -67,8 +67,10 @@ h2 {
 
 .projects {
     display: flex;
-    width: 70rem;
+    width: 68rem;
     margin-top: 1.5rem;
+    background-color: #1F2833;
+    padding: 1rem;
 }
 
 .projects img {
@@ -87,8 +89,6 @@ h2 {
 }
 
 .projects div {
-    flex-basis: 80%;
-    background-color: #1F2833;
     padding: 0.5rem 1rem;
 }
 
