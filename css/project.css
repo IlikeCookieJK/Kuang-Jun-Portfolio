@@ -1,5 +1,5 @@
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 header {
@@ -47,16 +47,23 @@ main {
 .carousel section div {
     flex-basis: 70%;
     padding: 0 1rem;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .carouselProject1 img {
     object-position: -175px;
 }
 
+.carousel a {
+    display: flex;
+    height: 2rem;
+    margin-left: 35rem;
+}
+
 h2 {
     font-size: 2.4rem;
 }
-
 
 .projects {
     display: flex;
@@ -83,4 +90,36 @@ h2 {
     flex-basis: 80%;
     background-color: #1F2833;
     padding: 0.5rem 1rem;
+}
+
+.projects .buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: #66FCF1;
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+
+}
+
+.website {
+    text-decoration: none;
+    border: 2px solid #66FCF1;
+    border-radius: 10px;
+    color: #66FCF1;
+    font-size: 1.6rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
 }
