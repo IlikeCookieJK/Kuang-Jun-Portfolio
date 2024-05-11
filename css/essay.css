@@ -1,0 +1,50 @@
+header {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.pageWrapper {
+    width: 70rem;
+}
+
+.pageWrapper section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.pageWrapper h2 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    margin-top: 2rem;
+}
+
+.pageWrapper section a {
+    text-decoration: none;
+    border: 2px solid #66FCF1;
+    background-color: transparent;
+    border-radius: 10px;
+    color: #66FCF1;
+    font-size: 1.6rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}

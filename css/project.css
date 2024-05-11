@@ -90,6 +90,8 @@ h2 {
 
 .projects div {
     padding: 0.5rem 1rem;
+    display: flex;
+    flex-flow: column;
 }
 
 .projects .buttons {
@@ -108,7 +110,10 @@ h2 {
     color: #66FCF1;
     font-size: 1.6rem;
     margin-top: 0.5rem;
+}
 
+.projects a {
+    align-self: flex-end;
 }
 
 .website {
