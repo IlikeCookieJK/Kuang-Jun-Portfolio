@@ -11,8 +11,14 @@
 </head>
 
 <body>
-    <nav>
-        <span>lines</span>
+    <nav class="none">
+        <div class="black"></div>
+        <div class="hamburgerMenu">
+            <input type="checkbox">
+            <span class="bar rotateBar"></span>
+            <span class="bar disepear"></span>
+            <span class="bar rotateBar1"></span>
+        </div>
         <section class="navigation">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
@@ -156,24 +162,32 @@
                 <img src="images/zenGarden.png" alt="Image of CSS Zen Garden">
                 <div>
                     <h2>CSS Zen Garden</h2>
-                    <p class="truncate">In CSS Zen Garden project, I was given a HTML file and an empty CSS file. For
+                    <p class="truncate" id="zenGardenDescription">In CSS Zen Garden project, I was given a HTML file and an empty CSS file. For
                         this assigment, I had
                         to stylized the webpage with CSS without touching the HTML file. In addition, I had a list of
                         selectors I had to use. The purpose of this project was to learn about new CSS selectors and how
                         they function. </p>
-                    <a href="" class="website">Visit Website</a>
+                    <div class="buttons">
+                        <button id="zenGarden" name="more">Show More</button>
+                        <button class="hidden" id="zenGardenLess">Show Less</button>
+                        <a href="" class="website">Visit Website</a>
+                    </div>
                 </div>
             </section>
             <section class="projects">
                 <img src="images/dossier.png" alt="Image of Dino Dossier">
                 <div>
                     <h2>Dino Dossier</h2>
-                    <p class="truncate">The Dino Dossier was the first website I built. It was a project that we made
+                    <p class="truncate" id="dossierDescription">The Dino Dossier was the first website I built. It was a project that we made
                         early on in the year
                         which reflected our HTML and CSS skills. When I was working on this project, I struggled with
                         positioning the content on my page. There was also problem with the color that I chose for the
                         background.</p>
-                    <a href="" class="website">Visit Website</a>
+                    <div class="buttons">
+                        <button id="dossier" name="more">Show More</button>
+                        <button class="hidden" id="dossierLess">Show Less</button>
+                        <a href="" class="website">Visit Website</a>
+                    </div>
                 </div>
             </section>
         </section>
@@ -182,8 +196,9 @@
         <h6>Contacts</h6>
         <a href="contact.html" class="contact">Contact Me Page</a>
         <div>
-            <a href=""><img src="images/Gmail.png" alt="Gmail"></a>
-            <a href=""><img src="images/linkedIn2.png" alt="LinkedIn"></a>
+            <a href="mailto:jun.hong.kuang000@gmail.com"><img src="images/Gmail.png" alt="Gmail"></a>
+            <a href="https://www.linkedin.com/in/junhongkuang/" target="_blank"><img src="images/linkedIn2.png"
+                    alt="LinkedIn"></a>
         </div>
     </footer>
 </body>

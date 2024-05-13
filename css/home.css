@@ -8,7 +8,7 @@ header {
 }
 
 header div {
-    width: 70rem;
+    width: 80vw;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -22,7 +22,7 @@ main {
 main div {
     display: flex;
     flex-flow: row wrap;
-    width: 70rem;
+    width: 80vw;
     justify-content: space-between;
 }
 
@@ -66,7 +66,7 @@ main div {
 .specialSect {
     flex-flow: row wrap;
     margin-top: 1.5rem;
-    width: 70rem;
+    width: 80vw;
 }
 
 .specialSect div {
@@ -74,4 +74,36 @@ main div {
     flex-flow: column;
     padding: 1rem;
     width: 46rem;
+}
+
+@media only screen and (max-width: 1128px) {
+    header div {
+        width: 80vw;
+    }
+
+    main div {
+        width: 80vw;
+    }
+
+    .homeSection {
+        width: 80vw;
+        margin-top: 2rem;
+    }
+
+    .homeSection *:not(img) {
+        margin-top: 0.5rem;
+    }
+
+    .homeSection {
+        width: 80vw;
+    }
+
+    .specialSect {
+        flex-flow: row wrap;
+        width: 75.5vw;
+    }
+
+    .homeSection img {
+        width: 100%;
+    }
 }

@@ -63,6 +63,39 @@ main {
     flex-basis: 65%;
 }
 
-.otherSect div h2{
+.otherSect div h2 {
     font-size: 2rem;
+}
+
+@media only screen and (max-width: 1128px) {
+
+    .description {
+        width: 80%;
+    }
+
+    .description div img {
+        align-self: flex-end;
+    }
+
+    .description div a{
+       align-self: flex-start;
+    }
+
+    .description p {
+        height: auto;
+    }
+
+    .otherSect {
+        width: 60%;
+        margin-top: 3vw;
+        justify-content: center;
+    }
+
+    .otherSect img {
+        width: 100%;
+    }
+
+    .otherSect div {
+        flex-basis: 100%;
+    }
 }

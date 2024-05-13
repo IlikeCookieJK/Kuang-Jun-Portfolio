@@ -32,3 +32,19 @@ main section img {
 main section div {
     margin-left: 1rem;
 }
+
+@media only screen and (max-width: 1128px) {
+    main section {
+        width: 80%;
+        flex-flow: column;
+    }
+
+    main section img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    main section div {
+        margin: 3vw 0 0 0;
+    }
+}

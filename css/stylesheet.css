@@ -31,6 +31,7 @@ body {
     color: black;
 }
 
+/* Navigation */
 nav {
     height: 5.5rem;
     background-color: #1F2833;
@@ -39,14 +40,12 @@ nav {
     align-items: center;
 }
 
-nav span {
-    display: none;
-    font-size: 2rem;
-    height: 5.5rem;
-}
-
 .navigation {
     display: flex;
+}
+
+.hamburgerMenu {
+    display: none;
 }
 
 .navigation a {
@@ -74,8 +73,10 @@ p {
     color: white;
 }
 
+/* Footer */
 footer {
     margin-top: 2rem;
+    padding: 1rem;
     background-color: #1F2833;
     display: flex;
     flex-flow: column wrap;
@@ -99,7 +100,192 @@ footer .contact {
     margin-top: 0.5rem;
 }
 
-footer div a img{
+footer div a img {
     height: 5rem;
     width: 5rem;
+}
+
+.mobileNav {
+    display: none;
+}
+
+@media only screen and (max-width: 1128px) {
+    nav {
+        height: 10vw;
+    }
+
+    .navigation a {
+        height: 5.5vw;
+        width: 20vw;
+        font-size: 4.5vw;
+    }
+}
+
+/* Mobile Version */
+
+@media only screen and (max-width: 600px) {
+    .navigation {
+        display: none;
+    }
+
+    :root {
+        --hamburgerHeigth: 6vw;
+    }
+
+    .hamburgerMenu {
+        width: 100vw;
+        height: var(--hamburgerHeigth);
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-right: 2vw;
+        z-index: 2;
+    }
+
+    .hamburgerMenu input {
+        position: absolute;
+        height: var(--hamburgerHeigth);
+        width: 11vw;
+        appearance: none;
+    }
+
+    .bar {
+        width: 10vw;
+        height: 3px;
+        background-color: #66FCF1;
+        border-radius: 2px;
+        justify-items: flex-end;
+    }
+
+    nav:has(input:checked) .black {
+        position: absolute;
+        width: 100vw;
+        height: 200vh;
+        background-color: #000000;
+        opacity: 90%;
+    }
+
+    nav:has(input:checked) .navigation {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        height: 200vh;
+        width: 80%;
+        z-index: 1;
+        background-color: #1F2833;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .navigation a {
+        margin-top: 10vw;
+        height: 12vw;
+        width: 100%;
+        font-size: 10vw;
+    }
+
+    /* Animation for Navigation */
+    body:has(nav input:checked) {
+        overflow: hidden;
+    }
+
+    /* If input is checked run animation */
+    nav:has(input:checked) .rotateBar {
+        animation: rotate 2s forwards;
+    }
+
+    nav:has(input:checked) .rotateBar1 {
+        animation: rotate1 2s forwards;
+    }
+
+    nav:has(input:checked) .disepear {
+        animation: disepear 2s forwards;
+    }
+
+    /* If input is NOT checked run REVERSE animation */
+    nav:has(input:not(:checked)) .rotateBar {
+        animation: reverseRotate 2s forwards;
+    }
+
+    nav:has(input:not(:checked)) .rotateBar1 {
+        animation: reverseRotate1 2s forwards;
+    }
+
+    nav:has(input:not(:checked)) .disepear {
+        animation: reappear 2s forwards;
+    }
+
+    @keyframes disepear {
+        0% {
+            opacity: 75%;
+        }
+
+        50% {
+            opacity: 45%;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes rotate {
+        from {
+            rotate: 180deg;
+        }
+
+        to {
+            transform: translate(2.5vw);
+            transform: translateY(4vw);
+            rotate: 45deg;
+        }
+    }
+
+    @keyframes rotate1 {
+        from {
+            rotate: 180deg;
+        }
+
+        to {
+            transform: translateX(2.5vw);
+            transform: translateY(-3.7vw);
+            rotate: -45deg;
+        }
+    }
+
+    @keyframes reverseRotate {
+        from {
+            transform: translate(2.5vw);
+            transform: translateY(4vw);
+            rotate: 45deg;
+        }
+
+        to {}
+    }
+
+    @keyframes reverseRotate1 {
+        from {
+            transform: translate(-2.5vw);
+            transform: translateY(-4vw);
+            rotate: -45deg;
+        }
+
+        to {}
+    }
+
+    @keyframes reappear {
+        0% {
+            opacity: 0%;
+        }
+
+        50% {
+            opacity: 45%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
 }

@@ -73,6 +73,43 @@ main {
     width: 10rem;
     display: flex;
     justify-content: center;
+    align-self: flex-end;
+    margin-left: auto;
+    padding: 0.3rem;
     margin-top: 0.5rem;
-    margin-left: 1rem;
+}
+
+@media only screen and (max-width: 1128px) {
+    .pageWrapper {
+        width: 80%;
+    }
+
+    .work {
+        width: auto;
+        margin-top: 3vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .work img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .work div {
+        flex-basis: 100%;
+        padding: 0;
+        margin-top: 2vw;
+    }
+
+    .work div p {
+        height: auto;
+        margin-top: 1vw;
+    }
+
+    .work div a {
+        margin-top: 2.5vw;
+    }
+
 }

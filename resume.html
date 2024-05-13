@@ -12,7 +12,13 @@
 
 <body>
     <nav class="none">
-        <span>lines</span>
+          <div class="black"></div>
+          <div class="hamburgerMenu">
+            <input type="checkbox">
+            <span class="bar rotateBar"></span>
+            <span class="bar disepear"></span>
+            <span class="bar rotateBar1"></span>
+          </div>
         <section class="navigation">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
@@ -24,8 +30,11 @@
     <header class="none">
         <div>
             <h1>My Resume</h1>
-            <p>This is my resume and you can click the download button to download a pdf of my resume.</p>
-            <a href="#" id="print" class="download">Download</a>
+            <p>This is my resume and you can click the download button or open a PDF file in a new tab.</p>
+            <div class="buttons">
+                <button id="print" class="download">Download</button>
+                <a href="essays/resume.pdf" target="_blank" class="download">Open PDF</a>
+            </div>
         </div>
     </header>
     <main>
@@ -37,10 +46,12 @@
             </section>
             <div class="leftSide">
                 <section>
-                    <h3>Contact</h3>
+                    <h3>Contacts</h3>
                     <ul>
-                        <li>jun.hong.kuang000@gmail.com</li>
-                        <li><a href="">IlikeCookieJK</a></li>
+                        <h4>E-mail</h4>
+                        <li><a href="mailto:jun.hong.kuang000@gmail.com">jun.hong.kuang000@gmail.com</a></li>
+                        <h4>LinkedIn</h4>
+                        <li><a href="https://www.linkedin.com/in/junhongkuang/">linkedin.com/in/junhongkuang</a></li>
                     </ul>
                 </section>
                 <section>
@@ -115,8 +126,8 @@
         <h6>Contacts</h6>
         <a href="contact.html" class="contact">Contact Me Page</a>
         <div>
-            <a href=""><img src="images/Gmail.png" alt="Gmail"></a>
-            <a href=""><img src="images/linkedIn2.png" alt="LinkedIn"></a>
+          <a href="mailto:jun.hong.kuang000@gmail.com"><img src="images/Gmail.png" alt="Gmail"></a>
+            <a href="https://www.linkedin.com/in/junhongkuang/" target="_blank"><img src="images/linkedIn2.png" alt="LinkedIn"></a>
         </div>
     </footer>
 </body>
