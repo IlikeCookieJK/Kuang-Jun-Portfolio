@@ -1,13 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Carousel
+    let previousButton = document.getElementById("previous");
+    let nextButton = document.getElementById("next");
     let carouselItem = document.getElementById("carouselItem1");
+    nextButton.addEventListener("click", () => {
+        console.log(carouselItem.id)
+    });
+
     console.log(carouselItem);
 
     // Show more/less buttons
     let buttons = document.querySelectorAll("button");
-    console.log(buttons);
     buttons.forEach(button => {
-        button.addEventListener("click", function () {
+    console.log(buttons)
+    button.addEventListener("click", function () {
             if (this.name === "more") {
                 // Gets paragraph ID and remove truncate class
                 let descriptionID = this.id + "Description";
