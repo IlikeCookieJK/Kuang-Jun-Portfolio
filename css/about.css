@@ -68,7 +68,6 @@ main {
 }
 
 @media only screen and (max-width: 1128px) {
-
     .description {
         width: 80%;
     }
@@ -77,8 +76,8 @@ main {
         align-self: flex-end;
     }
 
-    .description div a{
-       align-self: flex-start;
+    .description div a {
+        align-self: flex-start;
     }
 
     .description p {

@@ -116,14 +116,14 @@ footer div a img {
 
     .navigation a {
         height: 5.5vw;
-        width: 20vw;
-        font-size: 4.5vw;
+        width: 19vw;
+        font-size: 4vw;
     }
 }
 
 /* Mobile Version */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .navigation {
         display: none;
     }
@@ -146,7 +146,7 @@ footer div a img {
     .hamburgerMenu input {
         position: absolute;
         height: var(--hamburgerHeigth);
-        width: 11vw;
+        width: 15vw;
         appearance: none;
     }
 
@@ -255,7 +255,7 @@ footer div a img {
         }
     }
 
-    @keyframes reverseRotate {
+    @keyframes reverseRotate { 
         from {
             transform: translate(2.5vw);
             transform: translateY(4vw);

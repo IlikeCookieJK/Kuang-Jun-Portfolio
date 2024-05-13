@@ -130,6 +130,11 @@ h2 {
     margin-left: 1rem;
 }
 
+#zenGarden,
+#dossier {
+    display: none;
+}
+
 @media only screen and (max-width: 1128px) {
     header div {
         width: 80%;
