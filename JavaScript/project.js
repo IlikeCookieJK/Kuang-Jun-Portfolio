@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let nextButton = document.getElementById("next");
     let carouselItem = document.getElementById("carouselItem1");
     nextButton.addEventListener("click", () => {
+        carouselItem.classList.remove("moveRight");
         carouselItem.classList.add("hidden");
         item = Array.from(carouselItem.id);
         number = item[item.length - 1];
@@ -11,11 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     previousButton.addEventListener("click", () => {
+        carouselItem.classList.remove("moveRight");
         carouselItem.classList.add("hidden");
         item = Array.from(carouselItem.id);
         number = item[item.length - 1];
         newNumber = parseInt(number) - 1;
-        changeID2(newNumber,it);
+        changeID2(newNumber, item);
     });
 
     function changeID(number, item) {
@@ -48,7 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function changeCarouselItem(id) {
         carouselItem = document.getElementById(`${id}`);
-        carouselItem.classList.remove("hidden");
+        carouselItem.classList.remove("hidden","moveLeft");
+        carouselItem.classList.add("moveRight")
     }
 
     // Show more/less buttons
