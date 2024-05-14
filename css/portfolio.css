@@ -113,6 +113,22 @@ main {
     margin-top: 0.5rem;
 }
 
+.moveFromTop {
+    animation: moveFromTop 2s forwards;
+}
+
+@keyframes moveFromTop {
+    from {
+        transform: translateY(-160%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 @media only screen and (max-width: 1128px) {
     .pageWrapper {
         width: 80%;

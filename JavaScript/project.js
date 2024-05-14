@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function changeCarouselItem(id) {
         carouselItem = document.getElementById(`${id}`);
         carouselItem.classList.remove("hidden","moveLeft");
-        carouselItem.classList.add("moveRight")
+        carouselItem.classList.add("moveRight");
     }
 
     // Show more/less buttons
@@ -96,5 +96,3 @@ document.addEventListener("DOMContentLoaded", function () {
         return showLess.join("");
     }
 });
-
-

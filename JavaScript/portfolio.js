@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function changeCarouselItem(id) {
         carouselItem = document.getElementById(`${id}`);
+        carouselItem.classList.add("moveFromTop");
         carouselItem.classList.remove("hidden");
     }
 });

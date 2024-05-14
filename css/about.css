@@ -70,14 +70,20 @@ main {
 @media only screen and (max-width: 1128px) {
     .description {
         width: 80%;
+        display: flex;
+        flex-flow: column;
     }
 
-    .description div img {
-        align-self: flex-end;
+    .description div {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
     }
 
-    .description div a {
-        align-self: flex-start;
+    .description .contacts {
+        display: flex;
+        flex-flow: row;
     }
 
     .description p {
@@ -85,8 +91,8 @@ main {
     }
 
     .otherSect {
-        width: 60%;
-        margin-top: 3vw;
+        width: 80%;
+        margin-top: 4vw;
         justify-content: center;
     }
 
