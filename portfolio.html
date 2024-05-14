@@ -7,7 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/portfolio.css">
-
+    <script src="JavaScript/portfolio.js"></script>
 </head>
 
 <body>
@@ -32,23 +32,41 @@
     </header>
     <main>
         <div class="pageWrapper">
-            <section class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>Problem-Solving</li>
-                    <li>Organize</li>
-                    <li>Flexible</li>
-                    <li>Adaptable</li>
-                    <li>Determined</li>
-                </ul>
-            </section>
+            <div class="topContent">
+                <section class="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Problem-Solving</li>
+                        <li>Organize</li>
+                        <li>Flexible</li>
+                        <li>Adaptable</li>
+                        <li>Determined</li>
+                    </ul>
+                </section>
+                <div id="carousel">
+                    <ul id="carouselItems">
+                        <li><img src="images/zenGarden.png" alt="Image of CSS Zen Garden" id="item1"></li>
+                        <li><img src="images/calculator.png" alt="Image of Budget calculator" class="hidden" id="item2">
+                        </li>
+                        <li><img src="images/apaEssay.png" alt="Image of Essay" class="hidden" id="item3"></li>
+                        <li><img src="images/bowl.png" alt="Image of Glazed Ceramic Bowl" class="hidden" id="item4">
+                        </li>
+                        <li><img src="images/whistle.png" alt="Image of Ceramic Whistle" class="hidden" id="item5"></li>
+                        <li><img src="images/aircraftCarrier.png" alt="Image of Blender Model of Aircraft Carrier" class="hidden" id="item6"></li>
+                    </ul>
+                    <div class="buttons">
+                        <button id="preview">Preview</button>
+                        <button id="next">Next</button>
+                    </div>
+                </div>
+            </div>
             <section class="work">
                 <img src="images/fastFood.png" alt="Image of Western Dino House">
                 <div>
                     <h2>Programming Projects</h2>
                     <p>I have just started learning how to develop website and program, but I have some projects that I
                         have
-                        work on this year. Click the button to view the projects.</p>
+                        work on this year. Click the button to learn more about the projects.</p>
                     <a href="projects.html">Projects</a>
                 </div>
             </section>
@@ -56,7 +74,9 @@
                 <img src="images/apaEssay.png" alt="Image of an Essay">
                 <div>
                     <h2>Essays</h2>
-                    <p>These are some essays that I have written.</p>
+                    <p>Over the year, I have read books for english class. After finishing a book, we would write an
+                        essay that centers around the theme and how it could be associate with our daily lives. Click
+                        the button to see some of the essays.</p>
                     <a href="essays.html">Essays</a>
                 </div>
             </section>
@@ -66,7 +86,7 @@
                     <h2>Other Projects</h2>
                     <p>Programming projects are not the only thing I have worked on. I have also worked ceramic and
                         engineering
-                        projects. Click the button to view the projects.</p>
+                        projects. Click the button to see the projects.</p>
                     <a href="unrelatedProject.html">Other Projects</a>
                 </div>
             </section>

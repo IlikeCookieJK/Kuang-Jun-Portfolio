@@ -4,16 +4,59 @@ document.addEventListener("DOMContentLoaded", function () {
     let nextButton = document.getElementById("next");
     let carouselItem = document.getElementById("carouselItem1");
     nextButton.addEventListener("click", () => {
-        console.log(carouselItem.id)
+        carouselItem.classList.add("hidden");
+        item = Array.from(carouselItem.id);
+        number = item[item.length - 1];
+        changeID(number, item);
     });
 
-    console.log(carouselItem);
+    previousButton.addEventListener("click", () => {
+        carouselItem.classList.add("hidden");
+        item = Array.from(carouselItem.id);
+        number = item[item.length - 1];
+        newNumber = parseInt(number) - 1;
+        changeID2(newNumber,it);
+    });
+
+    function changeID(number, item) {
+        if (parseInt(number) === 3) {
+            item.pop();
+            item.push(1);
+            itemID = item.join(``);
+            changeCarouselItem(itemID);
+        } else {
+            item.pop();
+            item.push(parseInt(number) + 1);
+            itemID = item.join(``);
+            changeCarouselItem(itemID);
+        }
+    }
+
+    function changeID2(newNumber, item) {
+        if (newNumber === 0) {
+            item.pop();
+            item.push(3);
+            itemID = item.join(``);
+            changeCarouselItem(itemID);
+        } else {
+            item.pop();
+            item.push(parseInt(number) - 1);
+            itemID = item.join(``);
+            changeCarouselItem(itemID);
+        }
+    }
+
+    function changeCarouselItem(id) {
+        carouselItem = document.getElementById(`${id}`);
+        carouselItem.classList.remove("hidden");
+    }
 
     // Show more/less buttons
-    let buttons = document.querySelectorAll("button");
-    buttons.forEach(button => {
-    console.log(buttons)
-    button.addEventListener("click", function () {
+    let buttons = document.getElementsByClassName("trunc");
+    // Turns HTMLCollection to an array
+    let button = Array.from(buttons);
+    button.forEach(button => {
+        button.addEventListener("click", function () {
             if (this.name === "more") {
                 // Gets paragraph ID and remove truncate class
                 let descriptionID = this.id + "Description";

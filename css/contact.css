@@ -57,9 +57,7 @@ textarea::placeholder {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+   margin-top: 20vh;
 }
 
 @media only screen and (max-width: 1128px) {
