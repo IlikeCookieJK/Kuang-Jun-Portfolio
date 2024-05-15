@@ -176,7 +176,7 @@ h2 {
 
     #zenGarden,
     #dossier {
-        display: flex !important;
+        display: flex;
     }
 }
 
