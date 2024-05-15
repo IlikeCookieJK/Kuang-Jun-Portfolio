@@ -149,7 +149,8 @@ main {
     }
 
     .skills {
-        width: 80vw;
+        width: 72vw;
+        padding: 4vw;
     }
 
     .skills ul {
@@ -162,8 +163,9 @@ main {
     }
 
     .work {
-        width: 80vw;
+        width: 72vw;
         margin-top: 3vw;
+        padding: 4vw;
         display: flex;
         justify-content: center;
     }
