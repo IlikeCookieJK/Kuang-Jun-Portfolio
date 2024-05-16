@@ -8,17 +8,18 @@
     <link rel="icon" type="image/x-icon" href="images/faveicon.png">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/about.css">
+    <script src="JavaScript/about.js"></script>
 </head>
 
 <body>
     <nav class="none">
-          <div class="black"></div>
-          <div class="hamburgerMenu">
+        <div class="black"></div>
+        <div class="hamburgerMenu">
             <input type="checkbox">
             <span class="bar rotateBar"></span>
             <span class="bar disepear"></span>
             <span class="bar rotateBar1"></span>
-          </div>
+        </div>
         <section class="navigation">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
@@ -45,11 +46,22 @@
                 Lane.</p>
         </section>
         <section class="otherSect">
-            <img src="images/lol.png" alt="League of Legends">
+            <div class="carousel">
+                <img src="images/lol.png" alt="Image of League of Legends" id="item1">
+                <img src="images/valorant.jfif" alt="Image of Valorant" class="hidden" id="item2">
+                <img src="images/AL1.png" alt="Image of Azur Lane" class="hidden" id="item3">
+                <img src="images/AL.png" alt="Image of Azur Lane" class="hidden" id="item4">
+                <img src="images/tft.jpg" alt="Image of Team Fight Tatics" class="hidden" id="item5">
+                <div class="buttons">
+                    <button><img src="images/leftArrow.png" alt="Left Arrow" id="preview"></button>
+                    <button><img src="images/rightArrow.png" alt="Right Arrow" id="next"></button>
+                </div>
+            </div>
             <div>
                 <h2>Hobbies</h2>
                 <p>My hobbies are playing video games and watching anime. My three favorite video games are League of
-                    Legend, Azur Lane, and Valorant. What I like about League of Legends is the variety of champions
+                    Legend, Azur Lane, Valorant, and TFT. What I like about League of Legends is the variety of
+                    champions
                     available for me to play and how they each have unique play style. Similarly, I enjoy Valorant
                     because
                     each agents have different abilities. While the reason I enjoy playing Azur Lane is because
@@ -81,13 +93,10 @@
             <img src="images/club.JPG" alt="Image of Esport Club Picture">
             <div>
                 <h2>Club</h2>
-                <p>During my time at CART I have learned how to code and joined a club. Using the new coding knowledge,
-                    I
-                    have created websites. One of the websites was used for a public showcase at CART. The club I joined
-                    was
-                    the CART Esport club. In the club, we played games and participated in a tournament between other
-                    Esport
-                    clubs from Fresno.</p>
+                <p>At CART, I joined an Esport club where we played Overwatch. On Monday, we would meet up to hang out
+                    and play game together. While on Wednesday, we would compete against other Fresno Esport club.
+                    Additionally, I competed in the fall and spring tournament. The competition was better and my team
+                    did not make it far.</p>
             </div>
         </section>
     </main>

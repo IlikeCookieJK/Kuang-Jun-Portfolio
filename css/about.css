@@ -48,7 +48,7 @@ main {
     width: 70rem;
     display: flex;
     flex-flow: row wrap;
-    margin-top: 1rem;
+    margin-top: 2rem;
     background-color: #1F2833;
 }
 
@@ -56,6 +56,59 @@ main {
     width: 20rem;
     object-fit: cover;
     flex-basis: 30%;
+}
+
+/* Hobbies Carousel */
+.otherSect .carousel {
+    display: flex;
+    width: 20rem;
+    flex-basis: 30%;
+    padding: 0;
+}
+
+.otherSect .carousel img {
+    flex-basis: 100%;
+    object-fit: cover;
+}
+
+.otherSect .carousel .buttons {
+    padding: 0 0.5rem;
+    width: 20rem;
+    height: 285px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    display: none;
+    animation: appear 1s forwards;
+}
+
+.otherSect:has(.carousel:hover) .buttons {
+    display: flex;
+}
+
+.buttons button {
+    background-color: rgba(0, 0, 0, .7);
+    border: none;
+}
+
+.buttons button img {
+    width: 3rem;
+}
+
+.appear {
+    animation: appear 1s forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
 }
 
 .otherSect div {
@@ -102,5 +155,21 @@ main {
 
     .otherSect div {
         flex-basis: 100%;
+    }
+
+    /* Hobbies Carousel */
+    .otherSect .carousel {
+        flex-basis: 100%;
+    }
+
+    .otherSect .carousel .buttons {
+        padding: 0 2%;
+        width: 76%;
+        height: auto;
+        align-self: center;
+    }
+
+    .buttons button img {
+        width: 12vw;
     }
 }

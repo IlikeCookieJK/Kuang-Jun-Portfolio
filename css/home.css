@@ -31,6 +31,7 @@ main div {
     width: 20.3rem;
     height: fit-content;
     padding: 1rem;
+    border-radius: 20px;
     display: flex;
     flex-flow: column;
 }

@@ -35,6 +35,7 @@ main {
     background-color: #1F2833;
     margin-top: 1.5rem;
     padding: 1rem;
+    border-radius: 20px;
 }
 
 
@@ -94,6 +95,7 @@ h2 {
     margin-top: 1.5rem;
     background-color: #1F2833;
     padding: 1rem;
+    border-radius: 20px;
 }
 
 .projects img {
